@@ -26,17 +26,15 @@ var r = class {
     _unmarkAll() { this.isEmpty() || this._selection.forEach(e => this._unmarkSelected(e)); }
     _verifyValueAssignment(e) { e.length > 1 && this._multiple; }
     _hasQueuedChanges() { return !!(this._deselectedToEmit.length || this._selectedToEmit.length); }
-    _getConcreteValue(e, t) {
-        if (this.compareWith) {
-            t = t ?? this._selection;
-            for (let s of t)
-                if (this.compareWith(e, s))
-                    return s;
-            return e;
-        }
-        else
-            return e;
+    _getConcreteValue(e, t) { if (this.compareWith) {
+        t = t ?? this._selection;
+        for (let s of t)
+            if (this.compareWith(e, s))
+                return s;
+        return e;
     }
+    else
+        return e; }
 };
 function o() { return Error("Cannot pass multiple values into SelectionModel with single-value mode."); }
 export { r as a, o as b };

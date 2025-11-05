@@ -16,17 +16,12 @@ var I = 200, m = class {
     handleKey(t) { let e = t.keyCode; t.key && t.key.length === 1 ? this._letterKeyStream.next(t.key.toLocaleUpperCase()) : (e >= 65 && e <= 90 || e >= 48 && e <= 57) && this._letterKeyStream.next(String.fromCharCode(e)); }
     isTyping() { return this._pressedLetters.length > 0; }
     reset() { this._pressedLetters = []; }
-    _setupKeyHandler(t) {
-        this._letterKeyStream.pipe(h(e => this._pressedLetters.push(e)), a(t), _(() => this._pressedLetters.length > 0), c(() => this._pressedLetters.join("").toLocaleUpperCase())).subscribe(e => {
-            for (let s = 1; s < this._items.length + 1; s++) {
-                let n = (this._selectedItemIndex + s) % this._items.length, i = this._items[n];
-                if (!this._skipPredicateFn?.(i) && i.getLabel?.().toLocaleUpperCase().trim().indexOf(e) === 0) {
-                    this._selectedItem.next(i);
-                    break;
-                }
-            }
-            this._pressedLetters = [];
-        });
-    }
+    _setupKeyHandler(t) { this._letterKeyStream.pipe(h(e => this._pressedLetters.push(e)), a(t), _(() => this._pressedLetters.length > 0), c(() => this._pressedLetters.join("").toLocaleUpperCase())).subscribe(e => { for (let s = 1; s < this._items.length + 1; s++) {
+        let n = (this._selectedItemIndex + s) % this._items.length, i = this._items[n];
+        if (!this._skipPredicateFn?.(i) && i.getLabel?.().toLocaleUpperCase().trim().indexOf(e) === 0) {
+            this._selectedItem.next(i);
+            break;
+        }
+    } this._pressedLetters = []; }); }
 };
 export { m as a };
