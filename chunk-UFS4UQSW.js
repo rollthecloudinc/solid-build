@@ -103,8 +103,8 @@ var l = class {
         if (o)
             return G(o) ? new l(o.url, null, o.options) : new l(o, null);
     } }
-    static ɵfac = function (e) { return new (e || r)(h.ɵɵinject(L.HttpClient, 8), h.ɵɵinject(x.DomSanitizer), h.ɵɵinject(O, 8), h.ɵɵinject(h.ErrorHandler)); };
-    static ɵprov = h.ɵɵdefineInjectable({ token: r, factory: r.ɵfac, providedIn: "root" });
+    static \u0275fac = function (e) { return new (e || r)(h.\u0275\u0275inject(L.HttpClient, 8), h.\u0275\u0275inject(x.DomSanitizer), h.\u0275\u0275inject(O, 8), h.\u0275\u0275inject(h.ErrorHandler)); };
+    static \u0275prov = h.\u0275\u0275defineInjectable({ token: r, factory: r.\u0275fac, providedIn: "root" });
 } return r; })();
 function D(r, c, t, e, n) { return r || new I(c, t, n, e); }
 var q = { provide: I, deps: [[new F, new k, I], [new F, z], $, W, [new F, O]], useFactory: D };
@@ -176,14 +176,14 @@ var H = ["clip-path", "color-profile", "src", "cursor", "fill", "filter", "marke
             let [e, n] = this._splitIconName(t);
             e && (this._svgNamespace = e), n && (this._svgName = n), this._currentIconFetch = this._iconRegistry.getNamedSvgIcon(n, e).pipe(tt(1)).subscribe(o => this._setSvgElement(o), o => { let i = `Error retrieving icon ${e}:${n}! ${o.message}`; this._errorHandler.handleError(new Error(i)); });
         } }
-        static ɵfac = function (e) { return new (e || r); };
-        static ɵcmp = a.ɵɵdefineComponent({ type: r, selectors: [["mat-icon"]], hostAttrs: ["role", "img", 1, "mat-icon", "notranslate"], hostVars: 10, hostBindings: function (e, n) { e & 2 && (a.ɵɵattribute("data-mat-icon-type", n._usingFontIcon() ? "font" : "svg")("data-mat-icon-name", n._svgName || n.fontIcon)("data-mat-icon-namespace", n._svgNamespace || n.fontSet)("fontIcon", n._usingFontIcon() ? n.fontIcon : null), a.ɵɵclassMap(n.color ? "mat-" + n.color : ""), a.ɵɵclassProp("mat-icon-inline", n.inline)("mat-icon-no-color", n.color !== "primary" && n.color !== "accent" && n.color !== "warn")); }, inputs: { color: "color", inline: [2, "inline", "inline", Z], svgIcon: "svgIcon", fontSet: "fontSet", fontIcon: "fontIcon" }, exportAs: ["matIcon"], ngContentSelectors: et, decls: 1, vars: 0, template: function (e, n) { e & 1 && (a.ɵɵprojectionDef(), a.ɵɵprojection(0)); }, styles: [`mat-icon,mat-icon.mat-primary,mat-icon.mat-accent,mat-icon.mat-warn{color:var(--mat-icon-color, inherit)}.mat-icon{-webkit-user-select:none;user-select:none;background-repeat:no-repeat;display:inline-block;fill:currentColor;height:24px;width:24px;overflow:hidden}.mat-icon.mat-icon-inline{font-size:inherit;height:inherit;line-height:inherit;width:inherit}.mat-icon.mat-ligature-font[fontIcon]::before{content:attr(fontIcon)}[dir=rtl] .mat-icon-rtl-mirror{transform:scale(-1, 1)}.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon,.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon{display:block}.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon-button .mat-icon,.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon-button .mat-icon{margin:auto}
+        static \u0275fac = function (e) { return new (e || r); };
+        static \u0275cmp = a.\u0275\u0275defineComponent({ type: r, selectors: [["mat-icon"]], hostAttrs: ["role", "img", 1, "mat-icon", "notranslate"], hostVars: 10, hostBindings: function (e, n) { e & 2 && (a.\u0275\u0275attribute("data-mat-icon-type", n._usingFontIcon() ? "font" : "svg")("data-mat-icon-name", n._svgName || n.fontIcon)("data-mat-icon-namespace", n._svgNamespace || n.fontSet)("fontIcon", n._usingFontIcon() ? n.fontIcon : null), a.\u0275\u0275classMap(n.color ? "mat-" + n.color : ""), a.\u0275\u0275classProp("mat-icon-inline", n.inline)("mat-icon-no-color", n.color !== "primary" && n.color !== "accent" && n.color !== "warn")); }, inputs: { color: "color", inline: [2, "inline", "inline", Z], svgIcon: "svgIcon", fontSet: "fontSet", fontIcon: "fontIcon" }, exportAs: ["matIcon"], ngContentSelectors: et, decls: 1, vars: 0, template: function (e, n) { e & 1 && (a.\u0275\u0275projectionDef(), a.\u0275\u0275projection(0)); }, styles: [`mat-icon,mat-icon.mat-primary,mat-icon.mat-accent,mat-icon.mat-warn{color:var(--mat-icon-color, inherit)}.mat-icon{-webkit-user-select:none;user-select:none;background-repeat:no-repeat;display:inline-block;fill:currentColor;height:24px;width:24px;overflow:hidden}.mat-icon.mat-icon-inline{font-size:inherit;height:inherit;line-height:inherit;width:inherit}.mat-icon.mat-ligature-font[fontIcon]::before{content:attr(fontIcon)}[dir=rtl] .mat-icon-rtl-mirror{transform:scale(-1, 1)}.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon,.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon{display:block}.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon-button .mat-icon,.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon-button .mat-icon{margin:auto}
 `], encapsulation: 2, changeDetection: 0 });
     }
     return r;
 })(), At = (() => { class r {
-    static ɵfac = function (e) { return new (e || r); };
-    static ɵmod = a.ɵɵdefineNgModule({ type: r });
-    static ɵinj = a.ɵɵdefineInjector({ imports: [E, E] });
+    static \u0275fac = function (e) { return new (e || r); };
+    static \u0275mod = a.\u0275\u0275defineNgModule({ type: r });
+    static \u0275inj = a.\u0275\u0275defineInjector({ imports: [E, E] });
 } return r; })();
 export { R as a, P as b, y as c, N as d, I as e, D as f, q as g, nt as h, ot as i, rt as j, Mt as k, At as l };

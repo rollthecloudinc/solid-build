@@ -13,7 +13,7 @@ var D = (() => { class t {
         this.valueSignal.set(f(n || i || "ltr"));
     } }
     ngOnDestroy() { this.change.complete(); }
-    static ɵfac = function (n) { return new (n || t); };
-    static ɵprov = r.ɵɵdefineInjectable({ token: t, factory: t.ɵfac, providedIn: "root" });
+    static \u0275fac = function (n) { return new (n || t); };
+    static \u0275prov = r.\u0275\u0275defineInjectable({ token: t, factory: t.\u0275fac, providedIn: "root" });
 } return t; })();
 export { s as a, f as b, D as c };

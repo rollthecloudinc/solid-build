@@ -57,8 +57,8 @@ var He = (() => { class r {
     _maxBufferPx = 200;
     _scrollStrategy = new k(this.itemSize, this.minBufferPx, this.maxBufferPx);
     ngOnChanges() { this._scrollStrategy.updateItemAndBufferSize(this.itemSize, this.minBufferPx, this.maxBufferPx); }
-    static ɵfac = function (t) { return new (t || r); };
-    static ɵdir = o.ɵɵdefineDirective({ type: r, selectors: [["cdk-virtual-scroll-viewport", "itemSize", ""]], inputs: { itemSize: "itemSize", minBufferPx: "minBufferPx", maxBufferPx: "maxBufferPx" }, features: [o.ɵɵProvidersFeature([{ provide: G, useFactory: _e, deps: [$(() => r)] }]), o.ɵɵNgOnChangesFeature] });
+    static \u0275fac = function (t) { return new (t || r); };
+    static \u0275dir = o.\u0275\u0275defineDirective({ type: r, selectors: [["cdk-virtual-scroll-viewport", "itemSize", ""]], inputs: { itemSize: "itemSize", minBufferPx: "minBufferPx", maxBufferPx: "maxBufferPx" }, features: [o.\u0275\u0275ProvidersFeature([{ provide: G, useFactory: _e, deps: [$(() => r)] }]), o.\u0275\u0275NgOnChangesFeature] });
 } return r; })(), ge = 20, me = (() => { class r {
     _ngZone = s(v);
     _platform = s(g);
@@ -78,8 +78,8 @@ var He = (() => { class r {
         if (i == n)
             return !0;
     while (i = i.parentElement); return !1; }
-    static ɵfac = function (t) { return new (t || r); };
-    static ɵprov = o.ɵɵdefineInjectable({ token: r, factory: r.ɵfac, providedIn: "root" });
+    static \u0275fac = function (t) { return new (t || r); };
+    static \u0275prov = o.\u0275\u0275defineInjectable({ token: r, factory: r.\u0275fac, providedIn: "root" });
 } return r; })(), Z = (() => { class r {
     elementRef = s(D);
     scrollDispatcher = s(me);
@@ -100,8 +100,8 @@ var He = (() => { class r {
     measureScrollOffset(e) { let t = "left", i = "right", n = this.elementRef.nativeElement; if (e == "top")
         return n.scrollTop; if (e == "bottom")
         return n.scrollHeight - n.clientHeight - n.scrollTop; let l = this.dir && this.dir.value == "rtl"; return e == "start" ? e = l ? i : t : e == "end" && (e = l ? t : i), l && p() == f.INVERTED ? e == t ? n.scrollWidth - n.clientWidth - n.scrollLeft : n.scrollLeft : l && p() == f.NEGATED ? e == t ? n.scrollLeft + n.scrollWidth - n.clientWidth : -n.scrollLeft : e == t ? n.scrollLeft : n.scrollWidth - n.clientWidth - n.scrollLeft; }
-    static ɵfac = function (t) { return new (t || r); };
-    static ɵdir = o.ɵɵdefineDirective({ type: r, selectors: [["", "cdk-scrollable", ""], ["", "cdkScrollable", ""]] });
+    static \u0275fac = function (t) { return new (t || r); };
+    static \u0275dir = o.\u0275\u0275defineDirective({ type: r, selectors: [["", "cdk-scrollable", ""], ["", "cdkScrollable", ""]] });
 } return r; })(), ve = 20, we = (() => { class r {
     _platform = s(g);
     _listeners;
@@ -120,13 +120,13 @@ var He = (() => { class r {
     change(e = ve) { return e > 0 ? this._change.pipe(b(e)) : this._change; }
     _getWindow() { return this._document.defaultView || window; }
     _updateViewportSize() { let e = this._getWindow(); this._viewportSize = this._platform.isBrowser ? { width: e.innerWidth, height: e.innerHeight } : { width: 0, height: 0 }; }
-    static ɵfac = function (t) { return new (t || r); };
-    static ɵprov = o.ɵɵdefineInjectable({ token: r, factory: r.ɵfac, providedIn: "root" });
+    static \u0275fac = function (t) { return new (t || r); };
+    static \u0275prov = o.\u0275\u0275defineInjectable({ token: r, factory: r.\u0275fac, providedIn: "root" });
 } return r; })(), m = new W("VIRTUAL_SCROLLABLE"), z = (() => { class r extends Z {
     constructor() { super(); }
     measureViewportSize(e) { let t = this.elementRef.nativeElement; return e === "horizontal" ? t.clientWidth : t.clientHeight; }
-    static ɵfac = function (t) { return new (t || r); };
-    static ɵdir = o.ɵɵdefineDirective({ type: r, features: [o.ɵɵInheritDefinitionFeature] });
+    static \u0275fac = function (t) { return new (t || r); };
+    static \u0275dir = o.\u0275\u0275defineDirective({ type: r, features: [o.\u0275\u0275InheritDefinitionFeature] });
 } return r; })();
 function Se(r, c) { return r.start == c.start && r.end == c.end; }
 var Ce = typeof requestAnimationFrame < "u" ? V : E, Re = (() => {
@@ -185,11 +185,11 @@ var Ce = typeof requestAnimationFrame < "u" ? V : E, Re = (() => {
         _doChangeDetection() { this._isDestroyed || this.ngZone.run(() => { this._changeDetectorRef.markForCheck(), this._contentWrapper.nativeElement.style.transform = this._renderedContentTransform, te(() => { this._changeDetectionNeeded.set(!1); let e = this._runAfterChangeDetection; this._runAfterChangeDetection = []; for (let t of e)
             t(); }, { injector: this._injector }); }); }
         _calculateSpacerSize() { this._totalContentHeight.set(this.orientation === "horizontal" ? "" : `${this._totalContentSize}px`), this._totalContentWidth.set(this.orientation === "horizontal" ? `${this._totalContentSize}px` : ""); }
-        static ɵfac = function (t) { return new (t || r); };
-        static ɵcmp = o.ɵɵdefineComponent({ type: r, selectors: [["cdk-virtual-scroll-viewport"]], viewQuery: function (t, i) { if (t & 1 && o.ɵɵviewQuery(fe, 7), t & 2) {
+        static \u0275fac = function (t) { return new (t || r); };
+        static \u0275cmp = o.\u0275\u0275defineComponent({ type: r, selectors: [["cdk-virtual-scroll-viewport"]], viewQuery: function (t, i) { if (t & 1 && o.\u0275\u0275viewQuery(fe, 7), t & 2) {
                 let n;
-                o.ɵɵqueryRefresh(n = o.ɵɵloadQuery()) && (i._contentWrapper = n.first);
-            } }, hostAttrs: [1, "cdk-virtual-scroll-viewport"], hostVars: 4, hostBindings: function (t, i) { t & 2 && o.ɵɵclassProp("cdk-virtual-scroll-orientation-horizontal", i.orientation === "horizontal")("cdk-virtual-scroll-orientation-vertical", i.orientation !== "horizontal"); }, inputs: { orientation: "orientation", appendOnly: [2, "appendOnly", "appendOnly", ie] }, outputs: { scrolledIndexChange: "scrolledIndexChange" }, features: [o.ɵɵProvidersFeature([{ provide: Z, useFactory: (e, t) => e || t, deps: [[new re, new ne(m)], r] }]), o.ɵɵInheritDefinitionFeature], ngContentSelectors: pe, decls: 4, vars: 4, consts: [["contentWrapper", ""], [1, "cdk-virtual-scroll-content-wrapper"], [1, "cdk-virtual-scroll-spacer"]], template: function (t, i) { t & 1 && (o.ɵɵprojectionDef(), o.ɵɵdomElementStart(0, "div", 1, 0), o.ɵɵprojection(2), o.ɵɵdomElementEnd(), o.ɵɵdomElement(3, "div", 2)), t & 2 && (o.ɵɵadvance(3), o.ɵɵstyleProp("width", i._totalContentWidth())("height", i._totalContentHeight())); }, styles: [`cdk-virtual-scroll-viewport{display:block;position:relative;transform:translateZ(0)}.cdk-virtual-scrollable{overflow:auto;will-change:scroll-position;contain:strict}.cdk-virtual-scroll-content-wrapper{position:absolute;top:0;left:0;contain:content}[dir=rtl] .cdk-virtual-scroll-content-wrapper{right:0;left:auto}.cdk-virtual-scroll-orientation-horizontal .cdk-virtual-scroll-content-wrapper{min-height:100%}.cdk-virtual-scroll-orientation-horizontal .cdk-virtual-scroll-content-wrapper>dl:not([cdkVirtualFor]),.cdk-virtual-scroll-orientation-horizontal .cdk-virtual-scroll-content-wrapper>ol:not([cdkVirtualFor]),.cdk-virtual-scroll-orientation-horizontal .cdk-virtual-scroll-content-wrapper>table:not([cdkVirtualFor]),.cdk-virtual-scroll-orientation-horizontal .cdk-virtual-scroll-content-wrapper>ul:not([cdkVirtualFor]){padding-left:0;padding-right:0;margin-left:0;margin-right:0;border-left-width:0;border-right-width:0;outline:none}.cdk-virtual-scroll-orientation-vertical .cdk-virtual-scroll-content-wrapper{min-width:100%}.cdk-virtual-scroll-orientation-vertical .cdk-virtual-scroll-content-wrapper>dl:not([cdkVirtualFor]),.cdk-virtual-scroll-orientation-vertical .cdk-virtual-scroll-content-wrapper>ol:not([cdkVirtualFor]),.cdk-virtual-scroll-orientation-vertical .cdk-virtual-scroll-content-wrapper>table:not([cdkVirtualFor]),.cdk-virtual-scroll-orientation-vertical .cdk-virtual-scroll-content-wrapper>ul:not([cdkVirtualFor]){padding-top:0;padding-bottom:0;margin-top:0;margin-bottom:0;border-top-width:0;border-bottom-width:0;outline:none}.cdk-virtual-scroll-spacer{height:1px;transform-origin:0 0;flex:0 0 auto}[dir=rtl] .cdk-virtual-scroll-spacer{transform-origin:100% 0}
+                o.\u0275\u0275queryRefresh(n = o.\u0275\u0275loadQuery()) && (i._contentWrapper = n.first);
+            } }, hostAttrs: [1, "cdk-virtual-scroll-viewport"], hostVars: 4, hostBindings: function (t, i) { t & 2 && o.\u0275\u0275classProp("cdk-virtual-scroll-orientation-horizontal", i.orientation === "horizontal")("cdk-virtual-scroll-orientation-vertical", i.orientation !== "horizontal"); }, inputs: { orientation: "orientation", appendOnly: [2, "appendOnly", "appendOnly", ie] }, outputs: { scrolledIndexChange: "scrolledIndexChange" }, features: [o.\u0275\u0275ProvidersFeature([{ provide: Z, useFactory: (e, t) => e || t, deps: [[new re, new ne(m)], r] }]), o.\u0275\u0275InheritDefinitionFeature], ngContentSelectors: pe, decls: 4, vars: 4, consts: [["contentWrapper", ""], [1, "cdk-virtual-scroll-content-wrapper"], [1, "cdk-virtual-scroll-spacer"]], template: function (t, i) { t & 1 && (o.\u0275\u0275projectionDef(), o.\u0275\u0275domElementStart(0, "div", 1, 0), o.\u0275\u0275projection(2), o.\u0275\u0275domElementEnd(), o.\u0275\u0275domElement(3, "div", 2)), t & 2 && (o.\u0275\u0275advance(3), o.\u0275\u0275styleProp("width", i._totalContentWidth())("height", i._totalContentHeight())); }, styles: [`cdk-virtual-scroll-viewport{display:block;position:relative;transform:translateZ(0)}.cdk-virtual-scrollable{overflow:auto;will-change:scroll-position;contain:strict}.cdk-virtual-scroll-content-wrapper{position:absolute;top:0;left:0;contain:content}[dir=rtl] .cdk-virtual-scroll-content-wrapper{right:0;left:auto}.cdk-virtual-scroll-orientation-horizontal .cdk-virtual-scroll-content-wrapper{min-height:100%}.cdk-virtual-scroll-orientation-horizontal .cdk-virtual-scroll-content-wrapper>dl:not([cdkVirtualFor]),.cdk-virtual-scroll-orientation-horizontal .cdk-virtual-scroll-content-wrapper>ol:not([cdkVirtualFor]),.cdk-virtual-scroll-orientation-horizontal .cdk-virtual-scroll-content-wrapper>table:not([cdkVirtualFor]),.cdk-virtual-scroll-orientation-horizontal .cdk-virtual-scroll-content-wrapper>ul:not([cdkVirtualFor]){padding-left:0;padding-right:0;margin-left:0;margin-right:0;border-left-width:0;border-right-width:0;outline:none}.cdk-virtual-scroll-orientation-vertical .cdk-virtual-scroll-content-wrapper{min-width:100%}.cdk-virtual-scroll-orientation-vertical .cdk-virtual-scroll-content-wrapper>dl:not([cdkVirtualFor]),.cdk-virtual-scroll-orientation-vertical .cdk-virtual-scroll-content-wrapper>ol:not([cdkVirtualFor]),.cdk-virtual-scroll-orientation-vertical .cdk-virtual-scroll-content-wrapper>table:not([cdkVirtualFor]),.cdk-virtual-scroll-orientation-vertical .cdk-virtual-scroll-content-wrapper>ul:not([cdkVirtualFor]){padding-top:0;padding-bottom:0;margin-top:0;margin-bottom:0;border-top-width:0;border-bottom-width:0;outline:none}.cdk-virtual-scroll-spacer{height:1px;transform-origin:0 0;flex:0 0 auto}[dir=rtl] .cdk-virtual-scroll-spacer{transform-origin:100% 0}
 `], encapsulation: 2, changeDetection: 0 });
     }
     return r;
@@ -253,25 +253,25 @@ var Ge = (() => { class r {
     _updateComputedContextProperties(e) { e.first = e.index === 0, e.last = e.index === e.count - 1, e.even = e.index % 2 === 0, e.odd = !e.even; }
     _getEmbeddedViewArgs(e, t) { return { templateRef: this._template, context: { $implicit: e.item, cdkVirtualForOf: this._cdkVirtualForOf, index: -1, count: -1, first: !1, last: !1, odd: !1, even: !1 }, index: t }; }
     static ngTemplateContextGuard(e, t) { return !0; }
-    static ɵfac = function (t) { return new (t || r); };
-    static ɵdir = o.ɵɵdefineDirective({ type: r, selectors: [["", "cdkVirtualFor", "", "cdkVirtualForOf", ""]], inputs: { cdkVirtualForOf: "cdkVirtualForOf", cdkVirtualForTrackBy: "cdkVirtualForTrackBy", cdkVirtualForTemplate: "cdkVirtualForTemplate", cdkVirtualForTemplateCacheSize: "cdkVirtualForTemplateCacheSize" }, features: [o.ɵɵProvidersFeature([{ provide: R, useClass: L }])] });
+    static \u0275fac = function (t) { return new (t || r); };
+    static \u0275dir = o.\u0275\u0275defineDirective({ type: r, selectors: [["", "cdkVirtualFor", "", "cdkVirtualForOf", ""]], inputs: { cdkVirtualForOf: "cdkVirtualForOf", cdkVirtualForTrackBy: "cdkVirtualForTrackBy", cdkVirtualForTemplate: "cdkVirtualForTemplate", cdkVirtualForTemplateCacheSize: "cdkVirtualForTemplateCacheSize" }, features: [o.\u0275\u0275ProvidersFeature([{ provide: R, useClass: L }])] });
 } return r; })(), Ze = (() => { class r extends z {
     constructor() { super(); }
     measureBoundingClientRectWithScrollOffset(e) { return this.getElementRef().nativeElement.getBoundingClientRect()[e] - this.measureScrollOffset(e); }
-    static ɵfac = function (t) { return new (t || r); };
-    static ɵdir = o.ɵɵdefineDirective({ type: r, selectors: [["", "cdkVirtualScrollingElement", ""]], hostAttrs: [1, "cdk-virtual-scrollable"], features: [o.ɵɵProvidersFeature([{ provide: m, useExisting: r }]), o.ɵɵInheritDefinitionFeature] });
+    static \u0275fac = function (t) { return new (t || r); };
+    static \u0275dir = o.\u0275\u0275defineDirective({ type: r, selectors: [["", "cdkVirtualScrollingElement", ""]], hostAttrs: [1, "cdk-virtual-scrollable"], features: [o.\u0275\u0275ProvidersFeature([{ provide: m, useExisting: r }]), o.\u0275\u0275InheritDefinitionFeature] });
 } return r; })(), $e = (() => { class r extends z {
     constructor() { super(); let e = s(U); this.elementRef = new D(e.documentElement), this._scrollElement = e; }
     measureBoundingClientRectWithScrollOffset(e) { return this.getElementRef().nativeElement.getBoundingClientRect()[e]; }
-    static ɵfac = function (t) { return new (t || r); };
-    static ɵdir = o.ɵɵdefineDirective({ type: r, selectors: [["cdk-virtual-scroll-viewport", "scrollWindow", ""]], features: [o.ɵɵProvidersFeature([{ provide: m, useExisting: r }]), o.ɵɵInheritDefinitionFeature] });
+    static \u0275fac = function (t) { return new (t || r); };
+    static \u0275dir = o.\u0275\u0275defineDirective({ type: r, selectors: [["cdk-virtual-scroll-viewport", "scrollWindow", ""]], features: [o.\u0275\u0275ProvidersFeature([{ provide: m, useExisting: r }]), o.\u0275\u0275InheritDefinitionFeature] });
 } return r; })(), N = (() => { class r {
-    static ɵfac = function (t) { return new (t || r); };
-    static ɵmod = o.ɵɵdefineNgModule({ type: r });
-    static ɵinj = o.ɵɵdefineInjector({});
+    static \u0275fac = function (t) { return new (t || r); };
+    static \u0275mod = o.\u0275\u0275defineNgModule({ type: r });
+    static \u0275inj = o.\u0275\u0275defineInjector({});
 } return r; })(), Ye = (() => { class r {
-    static ɵfac = function (t) { return new (t || r); };
-    static ɵmod = o.ɵɵdefineNgModule({ type: r });
-    static ɵinj = o.ɵɵdefineInjector({ imports: [C, N, C, N] });
+    static \u0275fac = function (t) { return new (t || r); };
+    static \u0275mod = o.\u0275\u0275defineNgModule({ type: r });
+    static \u0275inj = o.\u0275\u0275defineInjector({ imports: [C, N, C, N] });
 } return r; })();
 export { G as a, k as b, _e as c, He as d, ge as e, me as f, Z as g, ve as h, we as i, m as j, z as k, Re as l, Ge as m, Ze as n, $e as o, N as p, Ye as q };

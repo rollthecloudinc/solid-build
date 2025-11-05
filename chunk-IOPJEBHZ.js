@@ -7,7 +7,7 @@ var w = class extends f {
     constructor(t) { super(), this._data = t; }
     connect() { return d(this._data) ? this._data : m(this._data); }
     disconnect() { }
-}, o = function (i) { return i[i.REPLACED = 0] = "REPLACED", i[i.INSERTED = 1] = "INSERTED", i[i.MOVED = 2] = "MOVED", i[i.REMOVED = 3] = "REMOVED", i; }(o || {}), T = new C("_ViewRepeater"), D = class {
+}, o = (function (i) { return i[i.REPLACED = 0] = "REPLACED", i[i.INSERTED = 1] = "INSERTED", i[i.MOVED = 2] = "MOVED", i[i.REMOVED = 3] = "REMOVED", i; })(o || {}), T = new C("_ViewRepeater"), D = class {
     viewCacheSize = 20;
     _viewCache = [];
     applyChanges(t, c, s, E, h) { t.forEachOperation((e, _, n) => { let a, l; if (e.previousIndex == null) {

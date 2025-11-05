@@ -2,8 +2,8 @@ import { b as t } from "@nf-internal/chunk-RXMLTE5A";
 import * as e from "@angular/core";
 import "@angular/core";
 var a = (() => { class o {
-    static ɵfac = function (i) { return new (i || o); };
-    static ɵmod = e.ɵɵdefineNgModule({ type: o });
-    static ɵinj = e.ɵɵdefineInjector({ imports: [t] });
+    static \u0275fac = function (i) { return new (i || o); };
+    static \u0275mod = e.\u0275\u0275defineNgModule({ type: o });
+    static \u0275inj = e.\u0275\u0275defineInjector({ imports: [t] });
 } return o; })();
 export { a };

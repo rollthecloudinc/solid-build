@@ -11,11 +11,11 @@ var p = (() => { class i {
     valueSignal = d("ltr");
     ngAfterContentInit() { this._isInitialized = !0; }
     ngOnDestroy() { this.change.complete(); }
-    static ɵfac = function (t) { return new (t || i); };
-    static ɵdir = e.ɵɵdefineDirective({ type: i, selectors: [["", "dir", ""]], hostVars: 1, hostBindings: function (t, s) { t & 2 && e.ɵɵattribute("dir", s._rawDir); }, inputs: { dir: "dir" }, outputs: { change: "dirChange" }, exportAs: ["dir"], features: [e.ɵɵProvidersFeature([{ provide: a, useExisting: i }])] });
+    static \u0275fac = function (t) { return new (t || i); };
+    static \u0275dir = e.\u0275\u0275defineDirective({ type: i, selectors: [["", "dir", ""]], hostVars: 1, hostBindings: function (t, s) { t & 2 && e.\u0275\u0275attribute("dir", s._rawDir); }, inputs: { dir: "dir" }, outputs: { change: "dirChange" }, exportAs: ["dir"], features: [e.\u0275\u0275ProvidersFeature([{ provide: a, useExisting: i }])] });
 } return i; })(), D = (() => { class i {
-    static ɵfac = function (t) { return new (t || i); };
-    static ɵmod = e.ɵɵdefineNgModule({ type: i });
-    static ɵinj = e.ɵɵdefineInjector({});
+    static \u0275fac = function (t) { return new (t || i); };
+    static \u0275mod = e.\u0275\u0275defineNgModule({ type: i });
+    static \u0275inj = e.\u0275\u0275defineInjector({});
 } return i; })();
 export { p as a, D as b };

@@ -34,9 +34,9 @@ var ce = new B("cdk-input-modality-detector-options"), ae = { ignoreKeys: [18, 1
         this._listenerCleanups = e.runOutsideAngular(() => [s.listen(t, "keydown", this._onKeydown, v), s.listen(t, "mousedown", this._onMousedown, v), s.listen(t, "touchstart", this._onTouchstart, v)]);
     } }
     ngOnDestroy() { this._modality.complete(), this._listenerCleanups?.forEach(e => e()); }
-    static ɵfac = function (t) { return new (t || n); };
-    static ɵprov = f.ɵɵdefineInjectable({ token: n, factory: n.ɵfac, providedIn: "root" });
-} return n; })(), b = function (n) { return n[n.IMMEDIATE = 0] = "IMMEDIATE", n[n.EVENTUAL = 1] = "EVENTUAL", n; }(b || {}), le = new B("cdk-focus-monitor-default-options"), p = D({ passive: !0, capture: !0 }), de = (() => { class n {
+    static \u0275fac = function (t) { return new (t || n); };
+    static \u0275prov = f.\u0275\u0275defineInjectable({ token: n, factory: n.\u0275fac, providedIn: "root" });
+} return n; })(), b = (function (n) { return n[n.IMMEDIATE = 0] = "IMMEDIATE", n[n.EVENTUAL = 1] = "EVENTUAL", n; })(b || {}), le = new B("cdk-focus-monitor-default-options"), p = D({ passive: !0, capture: !0 }), de = (() => { class n {
     _ngZone = u(j);
     _platform = u(d);
     _inputModalityDetector = u(ue);
@@ -88,8 +88,8 @@ var ce = new B("cdk-input-modality-detector-options"), ae = { ignoreKeys: [18, 1
             if (s[r].contains(t))
                 return !0;
     } return !1; }
-    static ɵfac = function (t) { return new (t || n); };
-    static ɵprov = f.ɵɵdefineInjectable({ token: n, factory: n.ɵfac, providedIn: "root" });
+    static \u0275fac = function (t) { return new (t || n); };
+    static \u0275prov = f.\u0275\u0275defineInjectable({ token: n, factory: n.\u0275fac, providedIn: "root" });
 } return n; })(), Ue = (() => { class n {
     _elementRef = u(ne);
     _focusMonitor = u(de);
@@ -100,8 +100,8 @@ var ce = new B("cdk-input-modality-detector-options"), ae = { ignoreKeys: [18, 1
     get focusOrigin() { return this._focusOrigin; }
     ngAfterViewInit() { let e = this._elementRef.nativeElement; this._monitorSubscription = this._focusMonitor.monitor(e, e.nodeType === 1 && e.hasAttribute("cdkMonitorSubtreeFocus")).subscribe(t => { this._focusOrigin = t, this.cdkFocusChange.emit(t); }); }
     ngOnDestroy() { this._focusMonitor.stopMonitoring(this._elementRef), this._monitorSubscription && this._monitorSubscription.unsubscribe(); }
-    static ɵfac = function (t) { return new (t || n); };
-    static ɵdir = f.ɵɵdefineDirective({ type: n, selectors: [["", "cdkMonitorElementFocus", ""], ["", "cdkMonitorSubtreeFocus", ""]], outputs: { cdkFocusChange: "cdkFocusChange" }, exportAs: ["cdkMonitorFocus"] });
+    static \u0275fac = function (t) { return new (t || n); };
+    static \u0275dir = f.\u0275\u0275defineDirective({ type: n, selectors: [["", "cdkMonitorElementFocus", ""], ["", "cdkMonitorSubtreeFocus", ""]], outputs: { cdkFocusChange: "cdkFocusChange" }, exportAs: ["cdkMonitorFocus"] });
 } return n; })();
 import * as a from "@angular/core";
 import { inject as c, afterNextRender as he, NgZone as I, DOCUMENT as F, Injector as _e, ElementRef as $, booleanAttribute as V, InjectionToken as G } from "@angular/core";
@@ -116,8 +116,8 @@ var W = class {
         return !1; let t = me(Ce(e)); if (t && (U(t) === -1 || !this.isVisible(t)))
         return !1; let o = e.nodeName.toLowerCase(), s = U(e); return e.hasAttribute("contenteditable") ? s !== -1 : o === "iframe" || o === "object" || this._platform.WEBKIT && this._platform.IOS && !ve(e) ? !1 : o === "audio" ? e.hasAttribute("controls") ? s !== -1 : !1 : o === "video" ? s === -1 ? !1 : s !== null ? !0 : this._platform.FIREFOX || e.hasAttribute("controls") : e.tabIndex >= 0; }
     isFocusable(e, t) { return ye(e) && !this.isDisabled(e) && (t?.ignoreVisibility || this.isVisible(e)); }
-    static ɵfac = function (t) { return new (t || n); };
-    static ɵprov = a.ɵɵdefineInjectable({ token: n, factory: n.ɵfac, providedIn: "root" });
+    static \u0275fac = function (t) { return new (t || n); };
+    static \u0275prov = a.\u0275\u0275defineInjectable({ token: n, factory: n.\u0275fac, providedIn: "root" });
 } return n; })();
 function me(n) { try {
     return n.frameElement;
@@ -192,8 +192,8 @@ var C = class {
     _injector = c(_e);
     constructor() { c(E).load(A); }
     create(e, t = !1) { return new C(e, this._checker, this._ngZone, this._document, t, this._injector); }
-    static ɵfac = function (t) { return new (t || n); };
-    static ɵprov = a.ɵɵdefineInjectable({ token: n, factory: n.ɵfac, providedIn: "root" });
+    static \u0275fac = function (t) { return new (t || n); };
+    static \u0275prov = a.\u0275\u0275defineInjectable({ token: n, factory: n.\u0275fac, providedIn: "root" });
 } return n; })(), ot = (() => { class n {
     _elementRef = c($);
     _focusTrapFactory = c(Ie);
@@ -208,8 +208,8 @@ var C = class {
     ngDoCheck() { this.focusTrap && !this.focusTrap.hasAttached() && this.focusTrap.attachAnchors(); }
     ngOnChanges(e) { let t = e.autoCapture; t && !t.firstChange && this.autoCapture && this.focusTrap?.hasAttached() && this._captureFocus(); }
     _captureFocus() { this._previouslyFocusedElement = M(), this.focusTrap?.focusInitialElementWhenReady(); }
-    static ɵfac = function (t) { return new (t || n); };
-    static ɵdir = a.ɵɵdefineDirective({ type: n, selectors: [["", "cdkTrapFocus", ""]], inputs: { enabled: [2, "cdkTrapFocus", "enabled", V], autoCapture: [2, "cdkTrapFocusAutoCapture", "autoCapture", V] }, exportAs: ["cdkTrapFocus"], features: [a.ɵɵNgOnChangesFeature] });
+    static \u0275fac = function (t) { return new (t || n); };
+    static \u0275dir = a.\u0275\u0275defineDirective({ type: n, selectors: [["", "cdkTrapFocus", ""]], inputs: { enabled: [2, "cdkTrapFocus", "enabled", V], autoCapture: [2, "cdkTrapFocusAutoCapture", "autoCapture", V] }, exportAs: ["cdkTrapFocus"], features: [a.\u0275\u0275NgOnChangesFeature] });
 } return n; })(), Fe = new G("liveAnnouncerElement", { providedIn: "root", factory: we });
 function we() { return null; }
 var Le = new G("LIVE_ANNOUNCER_DEFAULT_OPTIONS"), ke = 0, Oe = (() => { class n {
@@ -226,12 +226,12 @@ var Le = new G("LIVE_ANNOUNCER_DEFAULT_OPTIONS"), ke = 0, Oe = (() => { class n 
     ngOnDestroy() { clearTimeout(this._previousTimeout), this._liveElement?.remove(), this._liveElement = null, this._currentResolve?.(), this._currentPromise = this._currentResolve = void 0; }
     _createLiveElement() { let e = "cdk-live-announcer-element", t = this._document.getElementsByClassName(e), o = this._document.createElement("div"); for (let s = 0; s < t.length; s++)
         t[s].remove(); return o.classList.add(e), o.classList.add("cdk-visually-hidden"), o.setAttribute("aria-atomic", "true"), o.setAttribute("aria-live", "polite"), o.id = `cdk-live-announcer-${ke++}`, this._document.body.appendChild(o), o; }
-    _exposeAnnouncerToModals(e) { let t = this._document.querySelectorAll("body > .cdk-overlay-container [aria-modal=\"true\"]"); for (let o = 0; o < t.length; o++) {
+    _exposeAnnouncerToModals(e) { let t = this._document.querySelectorAll('body > .cdk-overlay-container [aria-modal="true"]'); for (let o = 0; o < t.length; o++) {
         let s = t[o], r = s.getAttribute("aria-owns");
         r ? r.indexOf(e) === -1 && s.setAttribute("aria-owns", r + " " + e) : s.setAttribute("aria-owns", e);
     } }
-    static ɵfac = function (t) { return new (t || n); };
-    static ɵprov = a.ɵɵdefineInjectable({ token: n, factory: n.ɵfac, providedIn: "root" });
+    static \u0275fac = function (t) { return new (t || n); };
+    static \u0275prov = a.\u0275\u0275defineInjectable({ token: n, factory: n.\u0275fac, providedIn: "root" });
 } return n; })(), it = (() => { class n {
     _elementRef = c($);
     _liveAnnouncer = c(Oe);
@@ -245,9 +245,9 @@ var Le = new G("LIVE_ANNOUNCER_DEFAULT_OPTIONS"), ke = 0, Oe = (() => { class n 
     _subscription;
     constructor() { c(E).load(A); }
     ngOnDestroy() { this._subscription && this._subscription.unsubscribe(); }
-    static ɵfac = function (t) { return new (t || n); };
-    static ɵdir = a.ɵɵdefineDirective({ type: n, selectors: [["", "cdkAriaLive", ""]], inputs: { politeness: [0, "cdkAriaLive", "politeness"], duration: [0, "cdkAriaLiveDuration", "duration"] }, exportAs: ["cdkAriaLive"] });
-} return n; })(), h = function (n) { return n[n.NONE = 0] = "NONE", n[n.BLACK_ON_WHITE = 1] = "BLACK_ON_WHITE", n[n.WHITE_ON_BLACK = 2] = "WHITE_ON_BLACK", n; }(h || {}), K = "cdk-high-contrast-black-on-white", Z = "cdk-high-contrast-white-on-black", y = "cdk-high-contrast-active", Ne = (() => { class n {
+    static \u0275fac = function (t) { return new (t || n); };
+    static \u0275dir = a.\u0275\u0275defineDirective({ type: n, selectors: [["", "cdkAriaLive", ""]], inputs: { politeness: [0, "cdkAriaLive", "politeness"], duration: [0, "cdkAriaLiveDuration", "duration"] }, exportAs: ["cdkAriaLive"] });
+} return n; })(), h = (function (n) { return n[n.NONE = 0] = "NONE", n[n.BLACK_ON_WHITE = 1] = "BLACK_ON_WHITE", n[n.WHITE_ON_BLACK = 2] = "WHITE_ON_BLACK", n; })(h || {}), K = "cdk-high-contrast-black-on-white", Z = "cdk-high-contrast-white-on-black", y = "cdk-high-contrast-active", Ne = (() => { class n {
     _platform = c(d);
     _hasCheckedHighContrastMode;
     _document = c(F);
@@ -268,12 +268,12 @@ var Le = new G("LIVE_ANNOUNCER_DEFAULT_OPTIONS"), ke = 0, Oe = (() => { class n 
         let t = this.getHighContrastMode();
         t === h.BLACK_ON_WHITE ? e.add(y, K) : t === h.WHITE_ON_BLACK && e.add(y, Z);
     } }
-    static ɵfac = function (t) { return new (t || n); };
-    static ɵprov = a.ɵɵdefineInjectable({ token: n, factory: n.ɵfac, providedIn: "root" });
+    static \u0275fac = function (t) { return new (t || n); };
+    static \u0275prov = a.\u0275\u0275defineInjectable({ token: n, factory: n.\u0275fac, providedIn: "root" });
 } return n; })(), st = (() => { class n {
     constructor() { c(Ne)._applyBodyHighContrastModeCssClasses(); }
-    static ɵfac = function (t) { return new (t || n); };
-    static ɵmod = a.ɵɵdefineNgModule({ type: n });
-    static ɵinj = a.ɵɵdefineInjector({ imports: [x] });
+    static \u0275fac = function (t) { return new (t || n); };
+    static \u0275mod = a.\u0275\u0275defineNgModule({ type: n });
+    static \u0275inj = a.\u0275\u0275defineInjector({ imports: [x] });
 } return n; })();
 export { ce as a, ae as b, ue as c, b as d, le as e, de as f, Ue as g, W as h, fe as i, C as j, Ie as k, ot as l, Fe as m, we as n, Le as o, Oe as p, it as q, h as r, Ne as s, st as t };

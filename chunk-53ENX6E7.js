@@ -6,7 +6,7 @@ var f = (() => { class e {
         i(t, r); }
     listen(t) { return this._listeners.push(t), () => { this._listeners = this._listeners.filter(r => t !== r); }; }
     ngOnDestroy() { this._listeners = []; }
-    static ɵfac = function (r) { return new (r || e); };
-    static ɵprov = n.ɵɵdefineInjectable({ token: e, factory: e.ɵfac, providedIn: "root" });
+    static \u0275fac = function (r) { return new (r || e); };
+    static \u0275prov = n.\u0275\u0275defineInjectable({ token: e, factory: e.\u0275fac, providedIn: "root" });
 } return e; })();
 export { f as a };

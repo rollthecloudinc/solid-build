@@ -57,11 +57,11 @@ var s = class {
     _getComponentRootNode(e) { return e.hostView.rootNodes[0]; }
 }, f = (() => { class n extends d {
     constructor() { let t = a(g), o = a(v); super(t, o); }
-    static ɵfac = function (o) { return new (o || n); };
-    static ɵdir = r.ɵɵdefineDirective({ type: n, selectors: [["", "cdkPortal", ""]], exportAs: ["cdkPortal"], features: [r.ɵɵInheritDefinitionFeature] });
+    static \u0275fac = function (o) { return new (o || n); };
+    static \u0275dir = r.\u0275\u0275defineDirective({ type: n, selectors: [["", "cdkPortal", ""]], exportAs: ["cdkPortal"], features: [r.\u0275\u0275InheritDefinitionFeature] });
 } return n; })(), A = (() => { class n extends f {
-    static ɵfac = (() => { let t; return function (i) { return (t || (t = r.ɵɵgetInheritedFactory(n)))(i || n); }; })();
-    static ɵdir = r.ɵɵdefineDirective({ type: n, selectors: [["", "cdk-portal", ""], ["", "portal", ""]], exportAs: ["cdkPortal"], features: [r.ɵɵProvidersFeature([{ provide: f, useExisting: n }]), r.ɵɵInheritDefinitionFeature] });
+    static \u0275fac = (() => { let t; return function (i) { return (t || (t = r.\u0275\u0275getInheritedFactory(n)))(i || n); }; })();
+    static \u0275dir = r.\u0275\u0275defineDirective({ type: n, selectors: [["", "cdk-portal", ""], ["", "portal", ""]], exportAs: ["cdkPortal"], features: [r.\u0275\u0275ProvidersFeature([{ provide: f, useExisting: n }]), r.\u0275\u0275InheritDefinitionFeature] });
 } return n; })(), p = (() => { class n extends c {
     _moduleRef = a(m, { optional: !0 });
     _document = a(E);
@@ -79,14 +79,14 @@ var s = class {
     attachTemplatePortal(t) { t.setAttachedHost(this); let o = this._viewContainerRef.createEmbeddedView(t.templateRef, t.context, { injector: t.injector }); return super.setDisposeFn(() => this._viewContainerRef.clear()), this._attachedPortal = t, this._attachedRef = o, this.attached.emit(o), o; }
     attachDomPortal = t => { let o = t.element; o.parentNode; let i = this._document.createComment("dom-portal"); t.setAttachedHost(this), o.parentNode.insertBefore(i, o), this._getRootNode().appendChild(o), this._attachedPortal = t, super.setDisposeFn(() => { i.parentNode && i.parentNode.replaceChild(o, i); }); };
     _getRootNode() { let t = this._viewContainerRef.element.nativeElement; return t.nodeType === t.ELEMENT_NODE ? t : t.parentNode; }
-    static ɵfac = function (o) { return new (o || n); };
-    static ɵdir = r.ɵɵdefineDirective({ type: n, selectors: [["", "cdkPortalOutlet", ""]], inputs: { portal: [0, "cdkPortalOutlet", "portal"] }, outputs: { attached: "attached" }, exportAs: ["cdkPortalOutlet"], features: [r.ɵɵInheritDefinitionFeature] });
+    static \u0275fac = function (o) { return new (o || n); };
+    static \u0275dir = r.\u0275\u0275defineDirective({ type: n, selectors: [["", "cdkPortalOutlet", ""]], inputs: { portal: [0, "cdkPortalOutlet", "portal"] }, outputs: { attached: "attached" }, exportAs: ["cdkPortalOutlet"], features: [r.\u0275\u0275InheritDefinitionFeature] });
 } return n; })(), x = (() => { class n extends p {
-    static ɵfac = (() => { let t; return function (i) { return (t || (t = r.ɵɵgetInheritedFactory(n)))(i || n); }; })();
-    static ɵdir = r.ɵɵdefineDirective({ type: n, selectors: [["", "cdkPortalHost", ""], ["", "portalHost", ""]], inputs: { portal: [0, "cdkPortalHost", "portal"] }, exportAs: ["cdkPortalHost"], features: [r.ɵɵProvidersFeature([{ provide: p, useExisting: n }]), r.ɵɵInheritDefinitionFeature] });
+    static \u0275fac = (() => { let t; return function (i) { return (t || (t = r.\u0275\u0275getInheritedFactory(n)))(i || n); }; })();
+    static \u0275dir = r.\u0275\u0275defineDirective({ type: n, selectors: [["", "cdkPortalHost", ""], ["", "portalHost", ""]], inputs: { portal: [0, "cdkPortalHost", "portal"] }, exportAs: ["cdkPortalHost"], features: [r.\u0275\u0275ProvidersFeature([{ provide: p, useExisting: n }]), r.\u0275\u0275InheritDefinitionFeature] });
 } return n; })(), I = (() => { class n {
-    static ɵfac = function (o) { return new (o || n); };
-    static ɵmod = r.ɵɵdefineNgModule({ type: n });
-    static ɵinj = r.ɵɵdefineInjector({});
+    static \u0275fac = function (o) { return new (o || n); };
+    static \u0275mod = r.\u0275\u0275defineNgModule({ type: n });
+    static \u0275inj = r.\u0275\u0275defineInjector({});
 } return n; })();
 export { s as a, h as b, d as c, l as d, c as e, u as f, f as g, A as h, p as i, x as j, I as k };
